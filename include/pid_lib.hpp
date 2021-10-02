@@ -72,8 +72,7 @@ double ControllerPID::computeVelocity(double set_point,
 * @return sampling_time
 */
 double ControllerPID::returnSamplingTime(void) {
-       
-       	return sampling_time;
+   return sampling_time;
 }
 
 #endif  // INCLUDE_PID_LIB_HPP_
