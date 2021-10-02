@@ -53,8 +53,12 @@ class ControllerPID {
 */
 double ControllerPID::computeVelocity(double set_point,
     double current_velocity) {
-    // By default this stub method is returning 2.0.
-    double new_velocity = 2.0;
+    double prev_error = 0, cur_error = 0, total_I_error = 0, total_D_error = 0;
+    cur_error = (set_point - current_velocity);
+    total_I_error = total_I_error + cur_error*sampling_time;
+    total_D_error = (cur_error - prev_error)/sampling_time;
+    double new_velocity;
+    new_velocity = k_p*cur_error +  k_i*total_I_error + k_d*total_D_error;
     return new_velocity;
 }
 
@@ -68,7 +72,8 @@ double ControllerPID::computeVelocity(double set_point,
 * @return sampling_time
 */
 double ControllerPID::returnSamplingTime(void) {
-    return sampling_time;
+       
+       	return sampling_time;
 }
 
 #endif  // INCLUDE_PID_LIB_HPP_
