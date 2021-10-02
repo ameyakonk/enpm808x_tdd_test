@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.com/aditiramadwar/PID_Controller.svg?branch=master)](https://travis-ci.com/github/aditiramadwar/PID_Controller)
 [![Coverage Status](https://coveralls.io/repos/github/aditiramadwar/PID_Controller/badge.svg?branch=master)](https://coveralls.io/github/aditiramadwar/PID_Controller?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/ameyakonk/enpm808x_tdd_test/badge.svg?branch=main)](https://coveralls.io/github/ameyakonk/enpm808x_tdd_test?branch=main)
 ---
 
 ## Overview
